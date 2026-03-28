@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme Colors -->
+    <color name="primary">#00BFA5</color>
+    <color name="primary_dark">#00897B</color>
+    <color name="accent">#00BFA5</color>
+    
+    <color name="background_light">#FAFAFA</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="foreground_light">#212121</color>
+    <color name="muted_light">#757575</color>
+    <color name="border_light">#E0E0E0</color>
+    
+    <!-- Dark Theme Colors -->
+    <color name="background_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="foreground_dark">#FFFFFF</color>
+    <color name="muted_dark">#BDBDBD</color>
+    <color name="border_dark">#333333</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#FF6B6B</color>
+    
+    <!-- Keyboard Colors -->
+    <color name="key_background">#F5F5F5</color>
+    <color name="key_background_dark">#2D2D2D</color>
+    <color name="key_text">#000000</color>
+    <color name="key_text_dark">#FFFFFF</color>
+    <color name="key_pressed">#E0E0E0</color>
+    
+    <!-- Pinned Item Color -->
+    <color name="pinned">#FFB300</color>
+    <color name="unpinned">#999999</color>
+</resources>

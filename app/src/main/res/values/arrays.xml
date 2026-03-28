@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Keyboard Height -->
+    <string-array name="keyboard_height_entries">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="keyboard_height_values">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+
+    <!-- Key Size -->
+    <string-array name="key_size_entries">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="key_size_values">
+        <item>small</item>
+        <item>normal</item>
+        <item>large</item>
+    </string-array>
+
+    <!-- Clipboard Limit -->
+    <string-array name="clipboard_limit_entries">
+        <item>25 items</item>
+        <item>50 items</item>
+        <item>100 items</item>
+    </string-array>
+
+    <string-array name="clipboard_limit_values">
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <!-- Theme -->
+    <string-array name="theme_entries">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Auto (System)</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>auto</item>
+    </string-array>
+
+</resources>

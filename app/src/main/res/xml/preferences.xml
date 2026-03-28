@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Keyboard Settings -->
+    <PreferenceCategory android:title="@string/pref_category_keyboard">
+
+        <ListPreference
+            android:key="keyboard_height"
+            android:title="@string/pref_keyboard_height"
+            android:entries="@array/keyboard_height_entries"
+            android:entryValues="@array/keyboard_height_values"
+            android:defaultValue="medium" />
+
+        <ListPreference
+            android:key="key_size"
+            android:title="@string/pref_key_size"
+            android:entries="@array/key_size_entries"
+            android:entryValues="@array/key_size_values"
+            android:defaultValue="normal" />
+
+        <SwitchPreferenceCompat
+            android:key="predictive_text"
+            android:title="@string/pref_predictive_text"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="emoji_suggestions"
+            android:title="@string/pref_emoji_suggestions"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="vibration"
+            android:title="@string/pref_vibration"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="sound"
+            android:title="@string/pref_sound"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- Clipboard Settings -->
+    <PreferenceCategory android:title="@string/pref_category_clipboard">
+
+        <ListPreference
+            android:key="clipboard_limit"
+            android:title="@string/pref_clipboard_limit"
+            android:entries="@array/clipboard_limit_entries"
+            android:entryValues="@array/clipboard_limit_values"
+            android:defaultValue="50" />
+
+        <Preference
+            android:key="clear_history"
+            android:title="@string/btn_clear_history" />
+
+    </PreferenceCategory>
+
+    <!-- Theme Settings -->
+    <PreferenceCategory android:title="@string/pref_category_theme">
+
+        <ListPreference
+            android:key="theme"
+            android:title="@string/pref_theme"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="auto" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
