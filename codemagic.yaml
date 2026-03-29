@@ -1,0 +1,50 @@
+workflows:
+  android-build:
+    name: Build Android APK
+    instance_type: linux
+    max_build_duration: 60
+    environment:
+      java: java11
+      android_sdk:
+        api_level: 34
+        build_tools_version: 34.0.0
+      vars:
+        GRADLE_OPTS: "-Xmx2048m"
+    triggering:
+      events:
+        - push
+        - pull_request
+      branch:
+        include_patterns:
+          - main
+          - develop
+    scripts:
+      - name: Set up Android SDK
+        script: |
+          echo "Setting up Android SDK..."
+          sdkmanager --licenses <<< y
+          sdkmanager "platforms;android-34"
+          sdkmanager "build-tools;34.0.0"
+      
+      - name: Build Debug APK
+        script: |
+          cd $CM_BUILD_DIR
+          chmod +x gradlew
+          ./gradlew clean assembleDebug --stacktrace
+      
+      - name: Build Release APK
+        script: |
+          cd $CM_BUILD_DIR
+          ./gradlew assembleRelease --stacktrace
+    
+    artifacts:
+      - app/build/outputs/apk/debug/app-debug.apk
+      - app/build/outputs/apk/release/app-release-unsigned.apk
+    
+    publishing:
+      email:
+        recipients:
+          - $CM_BUILD_INITIATOR_EMAIL
+        notify:
+          success: true
+          failure: true
