@@ -12,7 +12,7 @@ ext {
     minSdkVersion = 30
 }
 
-allprojects {
+subprojects {
     repositories {
         google()
         mavenCentral()
