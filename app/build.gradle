@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.application'
-    id 'kotlin-android'
+    id 'org.jetbrains.kotlin.android'
 }
 
 android {
@@ -40,8 +40,10 @@ android {
         viewBinding true
     }
 
-    packagingOptions {
-        exclude 'META-INF/proguard/androidx-*.pro'
+    packaging {
+        resources {
+            excludes += 'META-INF/proguard/androidx-*.pro'
+        }
     }
 }
 
